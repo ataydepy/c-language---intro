@@ -1,0 +1,160 @@
+# Questao 1
+#include <stdio.h>
+int main() {
+    float salario, salario_min, calculo;
+    scanf("%f %f", &salario, &salario_min);
+    calculo = (salario/salario_min);
+    printf("%.2f",calculo);
+}
+
+# Questao 2
+#include <stdio.h>
+int main() {
+    float n1,n2,n3;
+    scanf("%f %f %f", &n1, &n2, &n3);
+    if (n1 > n2 + n3){
+        printf("Sim");
+    }
+    else{
+        printf("Nao");
+    }
+}
+
+# Questao 3
+#include <stdio.h>
+#include <math.h>
+int main(){
+    float x,z,m;
+    scanf("%f %f", &x, &z);
+    m = x * pow((1 + z/100),12) ;
+    printf("%.2f",m);
+}
+
+# Questao 4
+#include <stdio.h>
+int main(){
+    float quantidade, resultado;
+    char tipo;
+    scanf("%f %c", &quantidade, &tipo);
+    if (tipo == 'S'){
+        resultado = 0.10 * quantidade;
+        printf("%.2f", resultado);
+    }
+    else{
+        resultado = 0.15 * quantidade;
+        printf("%.2f", resultado);
+    }
+}
+
+
+# Questao 5 
+#include <stdio.h>
+
+int main() {
+    int velocidade_max, velocidade, calculo;
+    scanf("%d %d", &velocidade_max, &velocidade);
+    calculo = velocidade - velocidade_max;
+    if (calculo <= 0) {
+        printf("0 reais");
+    } else if (calculo <= 10) {
+        printf("50 reais");
+    } else if (calculo >= 11 && calculo <= 30) {
+        printf("100 reais");
+    } else if (calculo > 30) {
+        printf("200 reais");
+    }
+}
+
+# Questao 6
+#include <stdio.h>
+int main(){
+    double custo_fabrica, resultado;
+    scanf("%lf", &custo_fabrica);
+    resultado = (custo_fabrica * 1.73);
+    printf("%.2f", resultado);
+}
+
+# Questao 7
+#include <stdio.h>
+int main(){
+    int a,b;
+    scanf("%d %d", &a, &b);
+    if (b == 0){
+        printf("Nao");
+    }
+    else if (a % b == 0){
+        printf("Sim");
+    }
+    else{
+        printf("Nao");
+    }
+}
+
+# Questao 8
+#include <stdio.h>
+int main(){
+    int a,b,aux;
+    scanf("%d %d", &a, &b);
+    aux = a;
+    a = b;
+    b = aux;
+    printf("%d %d", a,b);
+}
+
+# Questao 9
+#include <stdio.h>
+int main(){
+    float salario, prestacao;
+    scanf("%f %f", &salario, &prestacao);
+    if (prestacao >= (0.30 * salario)){
+        printf("Nao");
+    }
+    else{
+        printf("Sim");
+    }
+}
+
+# Questao 10
+#include <stdio.h>
+int main(){
+    float salario;
+    scanf("%f", &salario);
+    if (salario < 500){
+        printf("%.2f", salario * 1.15);
+    }
+    else{
+        printf("Nao tem direito");
+    }
+}
+
+# Questao 11
+#include <stdio.h>
+int main(){
+    float l,m,n;
+    scanf("%f %f %f", &l, &m, &n);
+    if (l > m && l > n){
+        if (m > n){
+            printf("%.0f %.0f %.0f", n, m, l);
+        }
+        else{
+            printf("%.0f %.0f %.0f", m, n, l);
+        }
+    }
+    else if (m > n && m > l){
+        if (n > l){
+            printf("%.0f %.0f %.0f", l, n, m);
+        }
+        else{
+            printf("%.0f %.0f %.0f", n, l, m);
+        }
+    }
+    else{
+        if (m > l){
+            printf("%.0f %.0f %.0f", l, m, n);
+        }
+        else{
+            printf("%.0f %.0f %.0f", m, l, n);
+        }
+        
+    }
+}
