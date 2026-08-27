@@ -1,0 +1,42 @@
+# Questao 1
+#include <stdio.h>
+#include <math.h>
+int main(){
+    int contador = 0;
+    while (contador < 20){
+        int numero, cubo;
+        scanf("%d", &numero);
+        cubo = (numero * numero * numero);
+        printf("%d\n", cubo);
+        contador = contador +1;
+    }
+}
+
+# Questao 2
+#include <stdio.h>
+int main(){
+    int n, conta;
+    int contador = 0; 
+    scanf("%d", &n);
+    for (int i = 1; i <= n; i ++){
+        conta = conta + i;
+        contador++;
+    }
+    printf("%d", conta);
+}
+
+# Questao 3
+#include <stdio.h>
+int main(){
+    int contador, numero, maior;
+    scanf("%d %d", &contador, &numero);
+    maior = numero;
+    
+    for (int i = 1; i < contador; i ++){
+        scanf("%d", &numero);
+        if (numero > maior){
+            maior = numero;
+        }
+    }
+    printf("%d", maior);
+}
