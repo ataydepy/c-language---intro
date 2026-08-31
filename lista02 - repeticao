@@ -18,7 +18,7 @@ int main(){
     int n, conta;
     int contador = 0; 
     scanf("%d", &n);
-    for (int i = 1; i <= n; i ++){
+    for (int i = 0; i < n; i ++){
         conta = conta + i;
         contador++;
     }
@@ -32,7 +32,7 @@ int main(){
     scanf("%d %d", &contador, &numero);
     maior = numero;
     
-    for (int i = 1; i < contador; i ++){
+    for (int i = 0; i < contador; i ++){
         scanf("%d", &numero);
         if (numero > maior){
             maior = numero;
@@ -40,3 +40,48 @@ int main(){
     }
     printf("%d", maior);
 }
+
+# Questao 4
+#include <stdio.h>
+int main(){
+    int numero, contador = 0, contador_par = 0, contador_impar = 0;
+    while (contador < 20){
+        scanf("%d", &numero);
+        if (numero % 2 == 0){
+            contador_par ++;
+        }
+        else{
+            contador_impar ++;
+        }
+        contador++;
+    
+    }
+    printf("PAR: %d \nIMPAR: %d",contador_par,contador_impar);
+}
+
+# Questao 5
+#include <stdio.h>
+int main(){
+    int numeros, contador,soma;
+    scanf("%d", &contador);
+    for(int i = 0; i < contador; i++){
+        scanf("%d", &numeros);
+        if(numeros % 2 == 0){
+            soma = soma + numeros;
+        }
+    }
+    printf("%d", soma);
+}
+
+# Questao 6
+#include <stdio.h>
+int main(){
+    int numero, fatorial = 1;
+    scanf("%d", &numero);
+    for(int i = numero; i >= 1; i--){
+        fatorial = fatorial * i;
+    }
+    printf("%d", fatorial);
+}           
+
+# Questao 7
