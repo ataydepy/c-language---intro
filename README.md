@@ -1,6 +1,6 @@
 # 🖥️ Programação em Linguagem C
 
-Este repositório contém todos os códigos-fonte, exercícios e projetos desenvolvidos durante a disciplina de **Programação** do curso de [Nome do seu Curso] na [Nome da sua Faculdade]. 
+Este repositório contém todos os códigos-fonte, exercícios e projetos desenvolvidos durante a disciplina de **Programação** do curso de Matemática Aplicada e Computacional na Universidade Federal de Viçosa. 
 
 Apesar de ser a porta de entrada para a programação, o conteúdo aborda desde a lógica básica até conceitos avançados de gerenciamento de memória e estruturas de dados em C.
 
