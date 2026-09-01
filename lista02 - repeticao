@@ -85,3 +85,97 @@ int main(){
 }           
 
 # Questao 7
+#include <stdio.h>
+int main(){
+    int contador;
+    scanf("%d", &contador);
+    float numeros, media, soma = 0;
+    for (int i = 0; i < contador; i++){
+        scanf("%f", &numeros);
+        soma = soma + numeros;
+    }
+    media = (soma/contador);
+    printf("%.1f", media);
+}
+
+# Questão 8 
+#include <stdio.h>
+
+int main(){
+    int contador = 0;
+    float salario, prestacao;
+    while (1){
+        scanf("%f %f", &salario, &prestacao);
+        if (salario < 0){
+            break;
+        }
+        if (prestacao > 0.3 * salario){
+            printf("EMPRESTIMO NEGADO\n");
+        }
+        else {
+            printf("EMPRESTIMO CONCEDIDO\n");
+        }
+        contador++;
+    }
+}
+
+# Questão 9
+#include <stdio.h>
+int main(){
+    int j, m;
+    int contador = 0;
+    scanf("%d %d", &j, &m);
+    while (contador < 10){
+        printf("%d\n", j);
+        j = j + m;
+        contador++;
+    }
+}
+
+
+# Questao 10
+#include <stdio.h>
+int main(){
+    int numero;
+    double conta = 0.0;
+    scanf("%d", &numero);
+    for (int i = 1; i <= numero; i++){
+        conta = conta + (1.0 / i);
+    }
+     printf("%.2lf\n", conta);
+}
+
+
+# Questão 11
+#include <stdio.h>
+int main(){
+    int numero, contador = 1;
+    double conta = 0;
+    scanf("%d", &numero);
+    while(contador <= numero){
+        conta = conta + (1.0/contador);
+        contador ++;
+    }
+    printf("%.2lf", conta);
+}
+
+# Questão 12
+#include <stdio.h>
+int main(){
+    int numero;
+    scanf("%d", &numero);
+    for (int i = 1; i <= numero; i++){
+        printf("%d * %d = %d\n", i, numero, i * numero);
+    }
+}
+
+# Questão 13
+#include <stdio.h>
+int main(){
+    int numero, contador = 1;
+    scanf("%d", &numero);
+    while (contador <= numero){
+        printf("%d * %d = %d\n", contador, numero, contador * numero);
+        contador++;
+    }
+}
